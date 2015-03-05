@@ -1,0 +1,18 @@
+////
+/// This is a poster comment.
+/// It will apply annotations to all items from file.
+/// @group API
+/// @author Hugo Giraudel
+////
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
