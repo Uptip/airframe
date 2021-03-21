@@ -1,8 +1,9 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { Box, Stack, Container } from '../lib/components';
-import injectAirframe from '../lib/takeOff';
+import injectAirframe from '../lib/injectAirframe';
 import 'sanitize.css';
+import 'sanitize.css/typography.css';
 
 const theme = {
   colors: {

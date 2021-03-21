@@ -1,5 +1,5 @@
 {
-  "name": "@airframe/core",
+  "name": "react-aiframe",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
