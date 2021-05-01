@@ -1,29 +1,31 @@
 {
-  "name": "Airframe",
+  "name": "@airframe/core",
   "version": "0.0.1",
-  "description": "Let's see how high this framework can fly",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Tip-/airframe.git"
-  },
-  "author": "Tip",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Tip-/airframe/issues"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "postbuild": "cp package.json dist/ && cp README.md dist/"
   },
-  "homepage": "https://github.com/Tip-/airframe",
+  "main": "./core.umd.js",
+  "module": "./core.es.js",
+  "dependencies": {
+    "lodash.isplainobject": "^4.0.6",
+    "lodash.topairs": "^4.3.0",
+    "merge-deep": "^3.0.3"
+  },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.1.0",
-    "gulp-minify-css": "^0.5.1",
-    "gulp-plumber": "^0.6.6",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^1.3.3",
-    "gulp-size": "^1.2.1",
-    "sassdoc": "^2.1.2"
+    "@vitejs/plugin-react-refresh": "^1.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sanitize.css": "^12.0.1",
+    "styled-components": "^5.2.1",
+    "vite": "^2.0.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8",
+    "styled-components": ">=5.0"
   }
 }
