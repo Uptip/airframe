@@ -24,3 +24,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build version
         run: yarn build
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          access: public
